@@ -1,0 +1,49 @@
+#!urs/bin/perl
+our $TotalSeed = 0;
+our $TotalTatal = 0;
+our $TotalError = 0;
+our $TotalUnknown = 0;
+our $TotalTimeOut = 0;
+@HashArray = ();
+%DataItem = {
+	Tatalseed => '',
+	TotalCasename => '',
+	TotalStarttime =>'',
+	TotalEndtime => '',
+	TotalLog =>'',
+	TotalCommand => '',
+	TotalQk =>'',
+	};
+
+sub deal_with{        #deal_with data_txt
+	FILE = open('aaa.txt');
+	@line = $FILE;
+	while(FILE) {
+		$LINE = $_;
+		if(/ERROR/) {
+			$TotalError  = $TotalError + 1;
+		}
+		if(/TATAL/){
+			$TotalFatal = $TotalFatal + 1;
+		}	
+		if(/PASS/) {
+			$TotalPass = $TotalPass + 1;			
+		}
+		if(/UNKNOWN/){
+			
+		}
+	}
+	for ($i = 0; $i< 9; $i++) {
+				
+	}
+}
+
+
+sub Hex_data {    #treadre 1
+	
+}
+
+
+sub Data_hex {    #treadere 2
+ 	
+}
